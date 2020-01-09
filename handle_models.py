@@ -17,3 +17,6 @@ def handle_car(output, input_shape):
     type_pred=np.argmax(car_type)
     return color_pred, type_pred
 
+def handle_output(model_type):
+    if model_type == "CAR_META":
+        return handle_car
