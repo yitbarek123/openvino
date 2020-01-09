@@ -17,4 +17,3 @@ def handle_car(output, input_shape):
     type_pred=np.argmax(car_type)
     return color_pred, type_pred
 
-    
