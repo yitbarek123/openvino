@@ -33,3 +33,7 @@ class Network:
         "make synchromous inference request, given an input image"
         self.exec_network.infer({self.input_blob:image})
         return
+    
+    def extraxt_output(self):
+        "return the result"
+        return self.exec_network.requests[0].outputs
