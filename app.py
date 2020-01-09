@@ -79,7 +79,7 @@ def perform_inference(args):
 
     #create an output image based on network
 
-    output_image=create_output_image(args.t,image,preprocessed_output)
+    output_image=create_output_image(args.t,image,processed_output)
     cv2.imwrite("outputs/{}-output.png".format(args.t),output_image)
 
 def main():
