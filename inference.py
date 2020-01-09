@@ -28,3 +28,8 @@ class Network:
         
         #return the input shape(to dtermine preprocessing)
         return network.inputs[self.input_blob].shape
+    
+    def sync_inference(self, image):
+        "make synchromous inference request, given an input image"
+        self.exec_network.infer({self.input_blob:image})
+        return
