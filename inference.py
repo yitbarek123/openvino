@@ -14,7 +14,7 @@ class Network:
     def load_model(self, model, device="CPU", cpu_extension=None):
         #load the model for the given IR files 
         model_xml=model
-        model_bin=os.path.splittext(model_xml)[0]+".bin"
+        model_bin=os.path.splitext(model_xml)[0]+".bin"
         # Initialize plugin
         self.plugin=IECore()
         # read the IR as a IENetwork
