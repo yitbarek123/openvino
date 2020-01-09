@@ -20,7 +20,7 @@ def get_args():
     t_desc="The type of model: POSE, TEXT or CAR_META"
 
     # classify arguments as optional and required groups
-    parser._action_groups_pop()
+    parser._action_groups.pop()
     required=parser.add_argument_group('required arguments')
     optional=parser.add_argument_group('optional arguments')
 
